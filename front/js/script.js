@@ -1,4 +1,8 @@
+//Création d'un tableau vide afin de préparer les données des différents canapés
+
 let canapeData = [];
+
+//Mise en place de la récéption des données de l'API
 
 const fetchCanape = async () => {
     await fetch("http://localhost:3000/api/products")
@@ -8,6 +12,8 @@ const fetchCanape = async () => {
         console.log(canapeData);
     });
 };
+
+//Structuration de la carte du produit avec ses éléments
 
 const canapeDisplay = async () => {
     await fetchCanape();
@@ -31,6 +37,7 @@ const canapeDisplay = async () => {
     canape.addEventListener("click" , () => {
         console.log(canape);
 
+        //Mise à disposition du lien du canape dans l'url
         window.location = `product.html?${canape.id}`;
     })
     )
