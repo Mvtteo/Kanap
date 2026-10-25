@@ -1,5 +1,11 @@
 # Kanap #
 
+Site e-commerce de canapés : accueil, page produit, panier et confirmation de commande en JavaScript. Projet de formation OpenClassrooms (Développeur intégrateur web).
+
+**Démo en ligne : https://mvtteo.github.io/Kanap/**
+
+La démo est statique : l'API du dossier `back/` y est simulée côté navigateur (`js/demo-api.js` sur la branche `gh-pages`, mêmes données que `back/models/Product.js`). Le code du front n'est pas modifié. Pour l'application complète, lancer le serveur comme indiqué ci-dessous.
+
 This is the front end and back end server for Project 5 of the Web Developer path.
 
 ### Back end Prerequisites ###
